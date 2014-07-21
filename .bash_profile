@@ -4,6 +4,11 @@
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
+alias git-push='git push -u origin master'
+alias ls='ls -F -N --color=auto'
+alias ll='ls -l'
+alias grep='grep --color=auto'
+
 
 # User specific environment and startup programs
 

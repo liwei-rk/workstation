@@ -1,13 +1,17 @@
+call pathogen#infect()
 syn on                      "语法支持
 
 "common conf {{             通用配置
+set nocompatible            "not for backward compatible,don't care it"
 set ai                      "自动缩进
 set bs=2                    "在insert模式下用退格键删除
 set showmatch               "代码匹配
+set showmode 		    "show current mode insert or visual,nothing indicate normal" 
 set laststatus=2            "总是显示状态行
 "set expandtab               "以下三个配置配合使用，设置tab和缩进空格数
 "set shiftwidth=4
 "set tabstop=4
+set mouse=a		    "enable mouse"
 set cursorline              "为光标所在行加下划线
 set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
@@ -28,11 +32,9 @@ nnoremap <leader>t : tabe<CR>
 
 "powerline{
  set guifont=PowerlineSymbols\ for\ Powerline
- set nocompatible
  set t_Co=256
  let g:Powerline_symbols = 'fancy'
 "}
-call pathogen#infect()
 "taglist{
     let Tlist_Show_One_File = 1            "只显示当前文件的taglist，默认是显示多个
     let Tlist_Exit_OnlyWindow = 1          "如果taglist是最后一个窗口，则退出vim
