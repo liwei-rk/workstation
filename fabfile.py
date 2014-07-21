@@ -1,4 +1,7 @@
 from fabric.api import *
+TFS_CLUSTER=[
+	"wj.lw@10.232.36.201",
+	]
 CLUSTER=[
         "lw@10.61.1.22",
         "lw@10.61.1.23",
@@ -15,7 +18,7 @@ CLUSTER3=[
         "root@10.61.1.94",
         "root@10.61.1.95",
          ]
-env.hosts=CLUSTER2
+env.hosts=TFS_CLUSTER
 HBASE_HOME='~/hbase'
 def ssh_keygen():
     local("ssh-keygen -t rsa")
