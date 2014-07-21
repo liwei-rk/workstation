@@ -1,9 +1,10 @@
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
+#if [ -f ~/.bashrc ]; then
+#	. ~/.bashrc
+#fi
+
 alias git-push='git push -u origin master'
 alias ls='ls -F -N --color=auto'
 alias ll='ls -l'
