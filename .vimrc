@@ -2,6 +2,7 @@ call pathogen#infect()
 syn on                      "语法支持
 
 "common conf {{             通用配置
+set ruler
 set nocompatible            "not for backward compatible,don't care it"
 set ai                      "自动缩进
 set bs=2                    "在insert模式下用退格键删除
@@ -15,6 +16,7 @@ set mouse=a		    "enable mouse"
 set cursorline              "为光标所在行加下划线
 set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
+set scrolloff=2		    "cursor line context have 2 lines,0 indidate not auto scroll"
 
 set ignorecase              "检索时忽略大小写
 set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
@@ -23,9 +25,10 @@ set helplang=cn             "帮助系统设置为中文
 set foldmethod=syntax       "代码折叠
 "}}
 
-nmap <C-t> :NERDTree<CR>  
-"conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
 let mapleader = ','
+"nmap <C-t> :NERDTree<CR>  
+"conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
+nnoremap <leader>nt : NERDTree<CR>
 nnoremap <C-l> gt
 nnoremap <C-h> gT
 nnoremap <leader>t : tabe<CR>
