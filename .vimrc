@@ -28,12 +28,14 @@ set foldmethod=syntax       "代码折叠
 let mapleader = ','
 "nmap <C-t> :NERDTree<CR>  
 "conf for tabs, 为标签页进行的配置，通过ctrl h/l切换标签等
+
 nnoremap <leader>nt : NERDTree<CR>
 nnoremap <C-l> gt
 nnoremap <C-h> gT
 nnoremap <leader>t : tabe<CR>
 
 "powerline{
+"copy workstation .fonts dir to ~ make fonts show correctly
  set guifont=PowerlineSymbols\ for\ Powerline
  set t_Co=256
  let g:Powerline_symbols = 'fancy'
