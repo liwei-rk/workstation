@@ -13,7 +13,7 @@ set laststatus=2            "总是显示状态行
 "set shiftwidth=4
 "set tabstop=4
 set mouse=a		    "enable mouse"
-set cursorline              "为光标所在行加下划线
+set cursorline              "为光标所在行加下划线 may slow down the speed when move
 set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
 set scrolloff=2		    "cursor line context have 2 lines,0 indidate not auto scroll"
@@ -24,6 +24,9 @@ set hls                     "检索时高亮显示匹配项
 set helplang=cn             "帮助系统设置为中文
 set foldmethod=syntax       "代码折叠
 "}}
+"conf for tagbar
+nmap <F8> :TagbarToggle<CR>
+autocmd FileType tagbar setlocal nocursorline nocursorcolumn
 
 let mapleader = ','
 "nmap <C-t> :NERDTree<CR>  
