@@ -16,6 +16,6 @@ alias grep='grep --color=auto'
 PATH=~/git-master:$PATH:$HOME/bin
 
 export PATH
-export TBLIB_ROOT=/home/wj.lw/tb-common-utils
-export TAIR_ROOT=/home/wj.lw/tair_bin 
+export TBLIB_ROOT=~/tb-common-utils
+export TAIR_ROOT=~/tair_bin 
 export LD_LIBRARY_PATH=~/lib:$TAIR_ROOT/lib
