@@ -39,9 +39,9 @@ nnoremap <leader>t : tabe<CR>
 
 "powerline{
 "copy workstation .fonts dir to ~ make fonts show correctly
-"set guifont=PowerlineSymbols\ for\ Powerline
- set t_Co=256
- let g:Powerline_symbols = 'fancy'
+set guifont=PowerlineSymbols\ for\ Powerline
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
 "}
 "taglist{
     let Tlist_Show_One_File = 1            "只显示当前文件的taglist，默认是显示多个
